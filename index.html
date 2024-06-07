@@ -4,7 +4,7 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
 
-    <!-- COMPONENT FILES-->
+   
     <script src="./js/Fish.js"></script>
     <script src="./js/Treasure.js"></script>
     <script src="./js/Rotation.js"></script>
@@ -31,7 +31,7 @@
         ></a-asset-item>
       </a-a-assets>
 
-      <!-- Sky -->
+      
       <a-sky
         geometry="primitive: sphere;"
         material="shader: gradient; bottomColor: #00009e; topColor:109 205 227;offset: 0.0001;"
@@ -40,16 +40,15 @@
         side="double"
         animation="property: rotation; to: 0 300 0; easing:linear; loop: true; dur: 500000"
       >
-        <!------------------------------------GLTF Models------------------------------------------>
-
-        <!--Island-->
+        
+         
         <a-entity
           gltf-model="#island"
           scale="1 1 1"
           position="0 -15 -40"
         ></a-entity>
 
-        <!--Trasures-->
+         
         <a-entity
           gltf-model="#treasure"
           scale="15 15 15"
@@ -71,13 +70,13 @@
           rotation="0 90 0"
         ></a-entity>
 
-        <!--Fish Entity-->
+        
         <a-entity position="0 0 0" id="fishModels" fish> </a-entity>
 
-        <!--Treasure Entity-->
+        
         <a-entity position="0 0 0" id="treasureCoins" coins> </a-entity>
 
-        <!--Turtule-->
+         
         <a-entity
           gltf-model="#turtle"
           scale="0.005 0.005 0.005"
@@ -86,7 +85,7 @@
         ></a-entity>
       </a-sky>
 
-      <!--Scuba Driver-->
+      
       <a-entity
         gltf-model="#scuba_driver"
         scale="0.1 0.1 0.1"
@@ -96,7 +95,7 @@
       >
         <a-sphere
           id="bubble1"
-          position="52.9829 119.97737 -49.38121"
+          position="52.9829 119.977 -49.381"
           radius="1"
           color="#b2ebf2"
           animation="property: position; to: 52.9829 300 -49.38121;easing:linear; loop: true; dur: 2000"
@@ -105,7 +104,7 @@
 
       <a-cylinder color="#00009e" radius="100" opacity="0.2"></a-cylinder>
 
-      <!-- CAMERA -->
+      
       <a-entity
         camera="active: true"
         look-controls
